@@ -1,4 +1,4 @@
-React Web app to show life cycle of each Countries and Cities.
+React Web app to show life cycle of each Countries and Cities.<br>
 Stack: Node & Express & MongoDB (MLab), React/Redux
 [Live Demo](https://citylifeimran.herokuapp.com/).
 
