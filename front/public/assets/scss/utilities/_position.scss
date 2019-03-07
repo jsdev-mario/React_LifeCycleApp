@@ -1,0 +1,28 @@
+// Positioning utilities
+.u-{
+	&pos-abs{
+		position: absolute;
+	}
+	&pos-rel{
+		position: relative;
+	}
+	&pos-st {
+		position:static;
+	}
+}
+
+@media (min-width:$md){
+	.u-{
+		&pos-md-abs{
+			position: absolute;
+		}
+	}
+}
+
+@media (min-width:$lg){
+	.u-{
+		&pos-lg-abs{
+			position: absolute;
+		}
+	}
+}

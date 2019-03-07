@@ -1,0 +1,32 @@
+// Image background utility 
+.u-bg{
+	&-img {
+		background-size: cover !important;
+		background-position:center center !important;
+		background-repeat: no-repeat !important;
+	  &-repeat-x {
+	  	background-repeat: repeat-x !important;
+	  }
+	  &-repeat-y {
+	  	background-repeat: repeat-y !important;
+	  }
+	}
+	&-parallax, &-fixed {
+		background-attachment:fixed !important;
+		background-size: cover !important;
+		background-position:center center !important;
+		background-repeat: no-repeat !important;
+	}
+	&-left-center {
+		background-position: left center !important;
+	}
+	&-top-center {
+		background-position: top center !important;
+	}
+	&-bottom-center {
+	  background-position: bottom center !important;
+	}
+	&-transparent {
+		background: transparent !important;
+	}
+}

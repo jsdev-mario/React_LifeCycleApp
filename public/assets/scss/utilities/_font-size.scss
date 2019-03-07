@@ -1,0 +1,45 @@
+// font size 10-30px
+@for $i from 10 through 30 {
+    .u-{
+		&fs-#{$i} { 
+    	font-size:px-to-rem($i) !important;
+	    }
+    }
+}
+@for $i from 30 through 60 {
+	@if($i%2 == 0){
+    .u-{
+		&fs-#{$i} { 
+    	font-size:px-to-rem($i) !important;
+	    }
+    }
+	}
+}
+
+@media(min-width:$md){
+	.u-fs-md-150 {
+		font-size: px-to-rem(150) !important;
+	}
+	@for $i from 20 through 80 {
+		@if($i%2 == 0){
+	    .u-{
+			&fs-md-#{$i} { 
+	    	font-size:px-to-rem($i) !important;
+		    }
+	    }
+		}
+	}
+}
+
+@media(min-width:$lg){
+	@for $i from 20 through 80 {
+		@if($i%2 == 0){
+	    .u-{
+			&fs-lg-#{$i} { 
+	    	font-size:px-to-rem($i) !important;
+		    }
+	    }
+		}
+	}
+}
+

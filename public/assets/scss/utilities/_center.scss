@@ -1,0 +1,18 @@
+.u-{
+	// Absolute center 
+	&pos-abs{
+		&-center{
+			@include center(absolute);
+		}
+		&-center--x {
+			@include center(absolute, false, true);
+		}
+		&-center--y {
+			@include center(absolute, true, false);
+		}
+	}
+	// Relative center 
+	&flex-center{
+		@include flex-center()
+	}
+}

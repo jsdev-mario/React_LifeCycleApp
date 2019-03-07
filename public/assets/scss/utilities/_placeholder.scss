@@ -1,0 +1,8 @@
+.u-placeholder{
+	&-white {
+		@include placeholder(#fff);
+	}
+	&-primary{
+		@include placeholder($color-primary);
+	}
+}

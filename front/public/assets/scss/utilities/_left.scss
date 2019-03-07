@@ -1,0 +1,35 @@
+.u-left{
+	&-0 { left: 0 !important; }
+}
+
+@for $i from 5 through 50 {
+	@if($i%5 == 0){ 
+	 .u-left-#{$i}{
+	 	left: px-to-rem($i) !important;
+	 }
+	}
+}
+
+@for $i from 5 through 50 {
+	@if($i%5 == 0){ 
+	 .u-left-minus-#{$i}{
+	 	left: - px-to-rem($i) !important;
+	 }
+	}
+}
+
+.u-left-25p{
+	left: 25% !important;
+}
+
+.u-left-50p{
+	left: 50% !important;
+}
+
+.u-left-75p{
+	left: 75% !important;
+}
+
+.u-left-100p{
+	left: 100% !important;
+}

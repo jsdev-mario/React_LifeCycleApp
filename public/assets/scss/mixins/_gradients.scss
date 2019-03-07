@@ -1,0 +1,80 @@
+// Background Gradient
+@mixin gradient($start-color, $end-color, $orientation, $start-percent:0%, $end-percent:100%) {
+  background: $start-color;
+  @if $orientation == 'left-top-right' {
+  background-image: -webkit-linear-gradient(left, $start-color $start-percent, $end-color $end-percent);  // Safari 5.1-6, Chrome 10+
+  background-image: -o-linear-gradient(left, $start-color $start-percent, $end-color $end-percent);  // Opera 12
+  background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=1); 
+  } @else if $orientation == 'right-top-left' {
+  background-image: -webkit-linear-gradient(right, $start-color $start-percent, $end-color $end-percent); // Safari 5.1-6, Chrome 10+
+  background-image: -o-linear-gradient(right, $start-color $start-percent, $end-color $end-percent); // Opera 12
+  background-image: linear-gradient(to left, $start-color $start-percent, $end-color $end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=1); 
+  }@else if $orientation == 'top-to-bottom' {
+  background-image: -webkit-linear-gradient(top, $start-color $start-percent, $end-color $end-percent);  // Safari 5.1-6, Chrome 10+
+  background-image: -o-linear-gradient(top, $start-color $start-percent, $end-color $end-percent);  // Opera 12
+  background-image: linear-gradient(to bottom, $start-color $start-percent, $end-color $end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=0); // IE9 and down
+  }@else if $orientation == 'bottom-to-top' {
+  background-image: -webkit-linear-gradient(bottom, $start-color $start-percent, $end-color $end-percent);  // Safari 5.1-6, Chrome 10+
+  background-image: -o-linear-gradient(bottom, $start-color $start-percent, $end-color $end-percent);  // Opera 12
+  background-image: linear-gradient(to top, $start-color $start-percent, $end-color $end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=0); // IE9 and down
+  }
+   @else {
+    background-image: -webkit-linear-gradient(left, $start-color $start-percent, $end-color $end-percent);
+    background-image: -o-linear-gradient(left, $start-color $start-percent, $end-color $end-percent); 
+    background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=1); 
+  }
+}
+
+// radial
+@mixin gradient-radial($inner: #555, $outer: #333) {
+  background-image: radial-gradient(circle, $inner, $outer);
+}
+
+// Border Gradient
+@mixin gradient-border($start-color, $end-color, $border-width, $direction) {
+  border: none;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#{$direction}, $start-color 0%, $end-color 100%), 
+                    linear-gradient(#{$direction}, $start-color 0%, $end-color 100%);
+  
+  @if $direction == 'to right' or $direction == 'to left' {
+    @if $direction == 'to right' {
+      border-left: $border-width solid $start-color;
+      border-right: $border-width solid $end-color;
+    } @else {
+      border-left: $border-width solid $end-color;
+      border-right: $border-width solid $start-color;
+    }
+    background-position: 0 0, 0 100%;
+    background-size: 100% $border-width;
+  }
+  
+  @if $direction == 'to top' or $direction == 'to bottom' {
+    @if $direction == 'to top' {
+      border-top: $border-width solid $end-color;
+      border-bottom: $border-width solid $start-color;
+    } @else {
+      border-top: $border-width solid $start-color;
+      border-bottom: $border-width solid $end-color;
+    }
+    background-position: 0 0, 100% 0;
+    background-size: $border-width 100%;
+  }
+}
+
+// Text Gradient
+@mixin gradient-text($start-color, $end-color, $direction) {
+  background: -webkit-linear-gradient($direction, $start-color, $end-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

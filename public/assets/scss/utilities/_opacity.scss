@@ -1,0 +1,43 @@
+.u-opacity{
+	&-0{
+		@include opacity(0);
+	}
+	&-01{
+		@include opacity(0.1);
+	}
+	&-02{
+		@include opacity(0.2);
+	}
+	&-03{
+		@include opacity(0.3);
+	}
+	&-04{
+		@include opacity(0.4);
+	}
+	&-04{
+		@include opacity(0.4);
+	}
+
+	&-05{
+		@include opacity(0.5);
+	}
+
+	&-06{
+		@include opacity(0.6);
+	}
+
+	&-07{
+		@include opacity(0.7);
+	}
+
+	&-08{
+		@include opacity(0.8);
+	}
+
+	&-09{
+		@include opacity(0.9);
+	}
+	&-1{
+		@include opacity(1);
+	}
+}

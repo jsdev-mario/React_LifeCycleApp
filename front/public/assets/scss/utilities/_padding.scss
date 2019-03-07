@@ -1,0 +1,280 @@
+// Padding around 5-20
+@for $i from 5 through 20 {
+	.u-p-#{$i}{
+		padding:px-to-rem($i) !important;
+	}
+}
+// Padding around 20-60 and separator value is 5
+@for $i from 20 through 60 {
+	@if($i%5 == 0){
+		.u-p-#{$i} {
+			padding: px-to-rem($i) !important;
+		}
+	}
+}
+
+// Padding top 5-20
+@for $i from 5 through 20 {
+	.u-pt-#{$i}{
+		padding-top:px-to-rem($i) !important;
+	}
+}
+
+// Padding top 20-100 and separator value is 5
+@for $i from 20 through 100 {
+	@if($i%5 == 0){
+		.u-pt-#{$i}{
+			padding-top:px-to-rem($i) !important;
+		}
+	}
+}
+// Padding bottom 5-20
+@for $i from 5 through 20 {
+	.u-pb-#{$i}{
+		padding-bottom:px-to-rem($i) !important;
+	}
+}
+
+// Padding bottom 20-100 and separator value is 5
+@for $i from 20 through 100 {
+	@if($i%5 == 0){
+	.u-pb-#{$i}{
+		padding-bottom:px-to-rem($i) !important;
+	}
+}
+}
+
+
+
+// Padding left 5-20
+@for $i from 5 through 20 {
+	.u-pl-#{$i}{
+		padding-left:px-to-rem($i) !important;
+	}
+}
+
+// Padding left 20-100 and separator value is 5
+@for $i from 20 through 100 {
+	@if($i%5 == 0){
+	.u-pl-#{$i}{
+		padding-left:px-to-rem($i) !important;
+	}
+	}
+}
+
+
+// Padding right 5-20
+@for $i from 5 through 20 {
+	.u-pr-#{$i}{
+		padding-right:px-to-rem($i) !important;
+	}
+}
+
+// Padding right 20-100 and separator value is 5
+@for $i from 20 through 100 {
+	@if($i%5 == 0){
+	.u-pr-#{$i}{
+		padding-right:px-to-rem($i) !important;
+	}
+  }
+}
+
+
+// Padding y 
+@for $i from 5 through 20 {
+	.u-py-#{$i}{
+		padding-top:px-to-rem($i) !important;
+		padding-bottom:px-to-rem($i) !important;
+	}
+}
+
+
+// Padding y 20-100 and separator value is 5
+@for $i from 20 through 100 {
+	@if($i%5 == 0){
+		.u-py-#{$i}{
+			padding-top:px-to-rem($i) !important;
+			padding-bottom:px-to-rem($i) !important;
+		}
+	}
+}
+
+// Padding x 
+@for $i from 5 through 20 {
+	.u-px-#{$i}{
+		padding-left:px-to-rem($i) !important;
+		padding-right:px-to-rem($i) !important;
+	}
+}
+
+// Padding x 20-60 and separator value is 5
+@for $i from 20 through 60 {
+	@if($i%5 == 0){
+		.u-px-#{$i}{
+			padding-left:px-to-rem($i) !important;
+			padding-right:px-to-rem($i) !important;
+		}
+	}
+}
+
+
+// Padding y 20-100 and separator value is 5
+@for $i from 20 through 100 {
+	@if($i%5 == 0){
+		.u-py-#{$i}{
+			padding-top:px-to-rem($i) !important;
+			padding-bottom:px-to-rem($i) !important;
+		}
+	}
+}
+
+
+////////////////////////////////////////////// Padding for > 768 start from 60 to 150
+// the idea behind start from 60 is, you can't if you can use 60px for small screen you can use it for > 768 but you can't use
+// padding avobe 100px for small screen it only can be applicabale for > 768px 
+
+@media (min-width:$md){
+
+// Padding around 60-150 and separator value is 5
+@for $i from 60 through 150 {
+	@if($i%5 == 0){
+		.u-p-md-#{$i} {
+			padding: px-to-rem($i) !important;
+		}
+	}
+}
+
+// Padding top 60-150 and separator value is 5
+@for $i from 60 through 150 {
+	@if($i%5 == 0){
+		.u-pt-md-#{$i}{
+			padding-top:px-to-rem($i) !important;
+		}
+	}
+}
+
+// Padding bottom 60-150 and separator value is 5
+@for $i from 60 through 150 {
+	@if($i%5 == 0){
+	.u-pb-md-#{$i}{
+		padding-bottom:px-to-rem($i) !important;
+	}
+}
+}
+
+// Padding left 60-150 and separator value is 5
+@for $i from 60 through 150 {
+	@if($i%5 == 0){
+	.u-pl-md-#{$i}{
+		padding-left:px-to-rem($i) !important;
+	}
+	}
+}
+
+// Padding right 20-100 and separator value is 5
+@for $i from 60 through 150 {
+	@if($i%5 == 0){
+	.u-pr-md-#{$i}{
+		padding-right:px-to-rem($i) !important;
+	}
+  }
+}
+
+// Padding y 60-150 and separator value is 5
+@for $i from 60 through 150 {
+	@if($i%5 == 0){
+		.u-py-md-#{$i}{
+			padding-top:px-to-rem($i) !important;
+			padding-bottom:px-to-rem($i) !important;
+		}
+	}
+}
+
+// Padding x 20-60 and separator value is 5
+@for $i from 60 through 150 {
+	@if($i%5 == 0){
+		.u-px-md-#{$i}{
+			padding-left:px-to-rem($i) !important;
+			padding-right:px-to-rem($i) !important;
+		}
+	}
+}
+
+}// END media > 768px
+
+
+
+
+
+
+////////////////////////////////////////////// Padding for > 992px start from 100 to 250
+// Why: Describe letter 
+
+@media (min-width:$lg){
+
+// Padding around 60-150 and separator value is 5
+@for $i from 100 through 250 {
+	@if($i%10 == 0){
+		.u-p-lg-#{$i} {
+			padding: px-to-rem($i) !important;
+		}
+	}
+}
+
+// Padding top 60-150 and separator value is 5
+@for $i from 100 through 250 {
+	@if($i%10 == 0){
+		.u-pt-lg-#{$i}{
+			padding-top:px-to-rem($i) !important;
+		}
+	}
+}
+
+// Padding bottom 100-250 and separator value is 5
+@for $i from 100 through 250 {
+	@if($i%10 == 0){
+	.u-pb-lg-#{$i}{
+		padding-bottom:px-to-rem($i) !important;
+	}
+}
+}
+
+// Padding left 100-250 and separator value is 5
+@for $i from 100 through 250 {
+	@if($i%10 == 0){
+	.u-pl-lg-#{$i}{
+		padding-left:px-to-rem($i) !important;
+	}
+	}
+}
+
+// Padding right 100-250 and separator value is 5
+@for $i from 100 through 250 {
+	@if($i%10 == 0){
+	.u-pr-lg-#{$i}{
+		padding-right:px-to-rem($i) !important;
+	}
+  }
+}
+
+// Padding y 100-250 and separator value is 5
+@for $i from 100 through 250 {
+	@if($i%10 == 0){
+		.u-py-lg-#{$i}{
+			padding-top:px-to-rem($i) !important;
+			padding-bottom:px-to-rem($i) !important;
+		}
+	}
+}
+
+// Padding x 100-250 and separator value is 5
+@for $i from 100 through 250 {
+	@if($i%10 == 0){
+		.u-px-lg-#{$i}{
+			padding-left:px-to-rem($i) !important;
+			padding-right:px-to-rem($i) !important;
+		}
+	}
+}
+
+}// END media > 992px

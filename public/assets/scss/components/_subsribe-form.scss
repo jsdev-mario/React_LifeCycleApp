@@ -1,0 +1,13 @@
+.subsribe-rounded {
+	.form-control {
+		border-color: #dde9f5;
+		@media(min-width:576px){
+			min-width: 460px;
+		}
+	}
+	@media(min-width:768px){
+			.btn {
+		margin-left: -50px;
+	}
+	}
+}

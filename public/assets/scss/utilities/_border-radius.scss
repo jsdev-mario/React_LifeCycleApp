@@ -1,0 +1,62 @@
+.u-{
+  &rounded {
+    border-radius:10px;
+  }
+}
+@for $i from 4 through 10 {
+  .u-rounded-#{$i} {
+    border-radius: #{$i}px !important;
+  }
+}
+
+@for $i from 15 through 30 {
+  @if ($i%5 == 0){
+  .u-rounded-#{$i} {
+    border-radius: #{$i}px !important;
+  }
+}
+}
+.u-rounded-50 {
+  border-radius: 1000em;
+}
+.u-rounded-left-50 {
+  border-top-left-radius:1000em;
+  border-bottom-left-radius:1000em;
+}
+.u-rounded-right-50 {
+  border-top-right-radius:1000em;
+  border-bottom-right-radius:1000em;
+}
+
+//Rounded top
+@for $i from 4 through 8 {
+  @if($i%2 == 0){
+  .u-bdrs-top-#{$i} {
+    border-radius: #{$i}px #{$i}px 0 0 !important;
+  }
+}
+}
+//Rounded bottom
+@for $i from 4 through 8 {
+    @if($i%2 == 0){
+  .u-rounded-bottom-#{$i} {
+    border-radius: 0 0 #{$i}px #{$i}px !important;
+  }
+}
+}
+//Rounded right
+@for $i from 4 through 8 {
+    @if($i%2 == 0){
+  .u-rounded-right-#{$i} {
+    border-radius: 0 #{$i}px #{$i}px 0  !important;
+  }
+}
+}
+//Rounded left
+@for $i from 4 through 8 {
+    @if($i%2 == 0){
+  .u-rounded-left-#{$i} {
+    border-radius: #{$i}px 0 0 #{$i}px !important;
+  }
+}
+}

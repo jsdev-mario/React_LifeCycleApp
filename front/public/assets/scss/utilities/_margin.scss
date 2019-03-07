@@ -1,0 +1,112 @@
+@for $i from 5 through 80 {
+	@if($i%5 == 0){
+		.u-mt-#{$i}{
+			margin-top:px-to-rem($i) !important;
+		}
+	}
+}
+
+
+@for $i from 5 through 80 {
+  @if($i%5 == 0){
+      .u-mb-#{$i}{
+          margin-bottom:px-to-rem($i) !important;
+      }
+  }
+}
+
+@for $i from 5 through 80 {
+	@if($i%5 == 0){
+	.u-ml-#{$i}{
+		margin-left:px-to-rem($i) !important;
+	}
+	}
+}
+
+
+@for $i from 5 through 80 {
+	@if($i%5 == 0){
+	.u-pr-#{$i}{
+		padding-right:px-to-rem($i) !important;
+	}
+  }
+}
+
+
+@for $i from 5 through 80 {
+	@if($i%5 == 0){
+		.u-my-#{$i}{
+			margin-top:px-to-rem($i) !important;
+			margin-bottom:px-to-rem($i) !important;
+		}
+	}
+}
+
+@for $i from 5 through 80 {
+	.u-mx-#{$i}{
+		margin-left:px-to-rem($i) !important;
+		margin-right:px-to-rem($i) !important;
+	}
+}
+
+
+// Margin  for > 768px. from 60 to 100
+
+
+@media (min-width:768px){
+
+  @for $i from 80 through 10 {
+      @if($i%5 == 0){
+          .u-mt-md-#{$i}{
+              margin-top:px-to-rem($i) !important;
+          }
+      }
+  }
+
+
+  @for $i from 80 through 100 {
+    @if($i%5 == 0){
+        .u-mb-md-#{$i}{
+            margin-bottom:px-to-rem($i) !important;
+        }
+    }
+  }
+
+  @for $i from 80 through 100 {
+      @if($i%5 == 0){
+      .u-ml-md-#{$i}{
+          margin-left:px-to-rem($i) !important;
+      }
+      }
+  }
+
+
+  @for $i from 80 through 100 {
+      @if($i%5 == 0){
+      .u-mr-md-#{$i}{
+          margin-right:px-to-rem($i) !important;
+      }
+    }
+  }
+
+
+  @for $i from 80 through 100 {
+      @if($i%5 == 0){
+          .u-my-md-#{$i}{
+              margin-top:px-to-rem($i) !important;
+              margin-bottom:px-to-rem($i) !important;
+          }
+      }
+  }
+
+  @for $i from 80 through 100 {
+      .u-mx-md-#{$i}{
+          margin-left:px-to-rem($i) !important;
+          margin-right:px-to-rem($i) !important;
+      }
+  }
+
+
+}
+// END media > 768px
+

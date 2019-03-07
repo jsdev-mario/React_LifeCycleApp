@@ -1,0 +1,97 @@
+// Background color
+@each $name, $colors in $theming {
+    .bg-#{$name} {
+      background:map-get($colors, color) !important;
+			@for $i from 1 through 9 {
+				&-opacity-0_#{$i}{
+					background:rgba(map-get($colors, color), $i/10);
+				}	
+			 }
+    }
+	
+    .bg-#{$name} {
+			&--onHover {
+				&:hover {
+					background:map-get($colors, color) !important;
+					color: #fff;
+				}
+			}
+    }
+  .bg-#{$name}-opacity {
+    background: rgba(map-get($colors, color), .75) !important;
+  }
+}
+
+// primary color opacity
+@for $i from 1 through 9 {
+	.bg-primary-opacity-0_#{$i} {
+		background:rgba($color-primary, $i/10);
+	}
+}
+
+// Social color
+@each $name, $colors in $socialColours {
+    .bg-#{$name} {
+      background: $colors;
+    }
+}
+
+// Text color
+@each $name, $colors in $theming {
+    .text-#{$name} {
+      color:map-get($colors, color) !important;
+    }
+}
+.color-heading {
+	color: $heading-color;
+}
+.bg-primary {
+  background: $color-primary !important;
+
+}
+.bg-dark {
+  background: #20283b !important;
+
+}
+.color-primary {
+  color: $color-primary !important;
+}
+.text-muted {
+		color: #7b8697 !important;
+}
+.bg-navy {
+	background: #273f5b;
+	color: #a5bacf;
+}
+.bg-navy-dark{
+	background: #20344a;
+	color: #a5bacf;
+}
+.text-navy {
+	color: #273f5b;
+}
+.text-navy-dark {
+	color: #20344a;
+}
+.bg-two-step{
+	@media(min-width:767px){
+		&:before {
+			content: '';
+			position: absolute;
+			width: 50%;
+			height: 100%;
+			background: #2c364c;
+			top: 0;
+		}
+	}
+}
+
+.purple-gradian {
+	@include gradient(#8B3AC6, #4D3399, left-to-right);
+}
+// Used in home 1
+.bg-gray-v1 { background: #F3F6FB; }
+// Used in home 2,3,4
+.bg-gray-v2 { background: #ECF5FE; }
+// Used in home 5
+.bg-gray-v3 { background: #F0F3FA; }

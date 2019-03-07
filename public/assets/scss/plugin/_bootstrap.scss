@@ -1,0 +1,30 @@
+.card {
+	border: none !important;
+}
+.tab__slider > .tab-pane{
+    display: block;  
+    height: 0;         
+    overflow:visible; 
+}
+.tab__slider > .active{
+    height: auto;    
+}
+ 
+.form-control  {
+	padding-left: 30px !important;
+	padding-right: 30px !important;
+}
+.input-group .form-control {
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+.lead {
+	font-size: 22px;
+}
+.progress{
+	background: lighten($color-primary, 42%);
+	&-bar {
+		height: 8px;
+		background: $color-primary !important;
+	}
+}

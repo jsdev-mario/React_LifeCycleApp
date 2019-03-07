@@ -1,0 +1,25 @@
+.accordion{
+		&__faq {
+		border-bottom: 1px solid #eaecef;
+	}
+	&__title {
+		font-size: 20px;
+		font-family: $secondary-font;
+		color: #273f59;
+		font-weight: 600;
+		display: block;
+		> i {
+			transition: .5s;
+		}
+		&.active {
+						> i {
+						transform: rotate(180deg);
+					}
+		}
+	}
+	&__text {
+		padding-left: 30px;
+		padding-bottom: 30px;
+		padding-right: 30px;
+	}
+}

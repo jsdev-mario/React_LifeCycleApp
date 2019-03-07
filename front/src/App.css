@@ -1,0 +1,86 @@
+@media screen and (max-width: 1024px) {
+  h1{font-size: 27px !important}
+  h2{font-size: 22px !important}
+  h3{font-size: 18px !important}
+  #city_summary p{
+    font-size: 18px !important;
+  }
+  .stepbar-title{
+    display: none !important;
+  }
+}
+
+#jumb_auth{
+  position: relative;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.border-danger{
+  border: 1px solid red !important;
+}
+
+.text-gray{
+  color:#d4d4d4 !important
+}
+
+.text-aqua{
+  color: aqua !important
+}
+
+.progress-bar{
+  height: 8px;
+  background-color: white !important
+}
+
+.progress{
+  background-color: #3d4b61 !important
+}
+
+.mt-6{
+  margin: 120px 0;
+}
+
+.data_content{
+  cursor: pointer;
+}
+
+.data_content img{
+  width: 70px;
+}
+
+.percentage{
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  line-height: 40px;
+}
+
+.arrow-up{
+  font-size: 20px;
+  color: #ff6262;
+}
+
+.arrow-down{
+  font-size: 20px;
+  color: aqua;
+}
+
+#city_summary p{
+  font-size: 25px;
+  color: white !important;
+  text-align: center;
+}
+
+#city_summary p b{
+  color: aqua !important
+}
+
+.stepbar-title{
+  display: block
+}
+
+

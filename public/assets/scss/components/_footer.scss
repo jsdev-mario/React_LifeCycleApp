@@ -1,0 +1,81 @@
+.social {
+	a {
+		width: 45px;
+		height: 45px;
+		background: rgba(white, .10);
+		display: block;
+		text-align: center;
+		color: #fff;
+		border-radius: 4px;
+		font-size: 18px;
+		line-height: 45px;
+		&:hover {
+			background: lighten($color-primary, 10%);
+		}
+	}
+	
+	&.social-white {
+		a {
+			background: #fff;
+			color:#92b7db;
+			&:hover{
+				color: $color-primary;
+			}
+		}
+	}
+}
+.social-rounded {
+	a {
+		border-radius: 50%;
+	}
+}
+
+.social-default {
+	a {
+		background: #ecf5fe;
+		color: #92b7db;
+		&:hover{
+			color: $color-primary;
+			background: #ecf5fe;
+		}
+	}
+}
+
+.social-sm {
+	a {
+		width: 35px;
+		height: 35px;
+		font-size: 16px;
+		line-height: 35px;
+	}
+}
+
+.scroll-top {
+  bottom: 20px;
+  font-size: 20px;
+  height: 40px;
+  position: fixed;
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+  cursor: pointer;
+  transition: .3s;
+  border-radius: 50%;
+  line-height: 40px;
+  right: -100px;
+	&.active {
+		right: 20px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

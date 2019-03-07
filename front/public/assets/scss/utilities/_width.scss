@@ -1,0 +1,54 @@
+.u-w-50vh {
+	width:50vh !important;
+}
+.u-w-100vh {
+	width:100vh !important;
+}
+.u-w-30p {
+	width: 30% !important;
+}
+.u-w-40p {
+	width: 40% !important;
+}
+.u-w-60p {
+	width: 60% !important;
+}
+.u-w-70p {
+	width: 70% !important;
+}
+.u-w-80p {
+	width: 80% !important;
+}
+.u-w-90p {
+	width: 90% !important;
+}
+.u-w-100p {
+	width: 100% !important;
+}
+.u-flex-1 {
+	flex-grow: 1 !important;
+}
+@for $i from 5 through 100 {
+	@if($i%5 == 0 ){
+		.u-w-#{$i}{
+			width: px-to-rem($i) !important;
+		}
+	}
+}
+
+
+@for $i from 100 through 300 {
+	@if($i%10 == 0 ){
+		.u-w-#{$i}{
+			width: px-to-rem($i) !important;
+		}
+	}
+}
+
+@for $i from 300 through 900 {
+	@if($i%50 == 0 ){
+		.u-max-w-#{$i}{
+		  width: px-to-rem($i) !important;
+		}
+	}
+}

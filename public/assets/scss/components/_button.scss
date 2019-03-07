@@ -1,0 +1,118 @@
+.btn {
+  cursor: pointer;
+  transition: .3s;
+  text-transform: capitalize;
+  font-family: $btn-font;
+  font-weight: $btn-font-weight;
+  font-size: 18px !important;
+  padding: $btn-padding;
+	&:focus {
+		box-shadow: none;
+	}
+}
+
+.btn-rounded {
+  border-radius:$btn-border-radius;
+}
+
+.btn-primary {
+  background: $color-primary;
+  box-shadow: 0 5px 40px 0 rgba(#0081FF, .30);
+  color: #fff;
+  &:hover{
+    background: darken($color-primary, 5%);
+    box-shadow: none;
+  }
+}
+
+.btn-white {
+  background: #fff;
+  box-shadow: 0 5px 40px 0 rgba(#2065a9, .20);
+  color: #597187 !important;
+  &:hover{
+    background: darken(#597187, 10%);
+    color: #fff !important;
+  }
+}
+.btn-outline-white {
+	background-color: transparent;
+	background-image: none;
+	border-color: #597187;
+  &:hover{
+    background: darken(#597187, 10%);
+    color: #fff !important;
+  }
+}
+
+.btn-pulple-light {
+	background: #a282e3;
+	color: #fff;
+	box-shadow: 0 5px 40px 0 rgba(#A282E3, .40);
+	&:hover {
+		background: darken(#a282e3, 10%);
+		color: #fff;
+	}
+}
+.btn-outline-pulple-light{
+	background:transparent;
+	border-color:#a282e3;
+	&:hover {
+		background: #a282e3;
+		color: #fff;
+	}
+}
+
+.btn-yellow {
+  background: #ffad00;
+  box-shadow: 0 5px 40px 0 rgba(#FFAD00, .30);
+  color: #fff !important;
+  &:hover{
+    background: darken(#ffad00, 5%);
+    color: #fff;
+  }
+}
+
+.btn-outline-yellow {
+  background: transparent;
+	border-color: #ffad00;
+  &:hover{
+    background:#ffad00;
+    color: #fff;
+  }
+}
+
+
+.btn-green {
+  background: #2cd44a;
+  box-shadow: 0 5px 40px 0 rgba(#2cd44a, .30);
+  color: #fff !important;
+  &:hover{
+    background: darken(#2cd44a, 5%);
+    color: #fff;
+  }
+}
+
+
+.btn-red {
+  background: #f64d62;
+  box-shadow: 0 5px 40px 0 rgba(#f64d62, .30);
+  color: #fff !important;
+  &:hover{
+    background: darken(#f64d62, 5%);
+    color: #fff;
+  }
+}
+
+.btn-outline-green {
+  background:transparent;
+	border-color: #2cd44a;
+  &:hover{
+    background: darken(#2cd44a, 5%);
+    color: #fff;
+  }
+}
+.btn-sm {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	font-size: 14px !important;
+}

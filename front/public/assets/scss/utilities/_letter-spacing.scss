@@ -1,0 +1,6 @@
+// Letter spacing 
+@for $i from 1 through 10{
+	.u-ls-#{$i}{
+		letter-spacing: #{$i}px;
+	}
+}

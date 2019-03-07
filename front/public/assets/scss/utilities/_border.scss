@@ -1,0 +1,131 @@
+.u-bdr{
+	&-x {
+		border-left: 1px solid transparent !important;;
+		border-right: 1px solid transparent !important;;
+		&-0 {
+		border-left: none !important;;
+		border-right: none !important;;
+		}	
+	} 
+	&-y {
+		border-top: 1px solid transparent !important;
+		border-bottom: 1px solid transparent !important;
+		&-0 {
+		border-top: none !important;;
+		border-bottom: none !important;;
+		}
+	} 
+	&-top {
+	  border-top: 1px solid transparent !important;
+	}
+	&-bottom {
+		border-bottom:1px solid transparent !important;
+	}
+	&-left {
+	  border-left: 1px solid transparent !important;
+	}
+	&-right {
+		border-right:1px solid transparent !important;
+	}
+	&-dashed {
+		border: 1px dashed transparent !important;
+		&--y{
+			border-top: 1px dashed transparent !important;
+			border-bottom: 1px dashed transparent !important;
+		}
+		&--x{
+			border-right:1px dashed transparent !important;
+			border-left: 1px dashed transparent !important;
+		}
+		&--top {
+		border-top: 1px dashed transparent !important;
+		}
+		&--bottom {
+			border-bottom: 1px dashed transparent !important;
+		}
+		&--left {
+			border-left: 1px dashed transparent !important;
+		}
+		&--right {
+			border-right: 1px dashed transparent !important;
+		}
+	}
+	&-dotted {
+		border: 1px dotted transparent !important;
+		&--y{
+			border-top: 1px dotted transparent !important;
+			border-bottom: 1px dotted transparent !important;
+		}
+		&--x{
+			border-right:1px dotted transparent !important;
+			border-left: 1px dotted transparent !important;
+		}
+		&--top {
+		border-top: 1px dashed dotted !important;
+		}
+		&--bottom {
+			border-bottom: 1px dotted transparent !important;
+		}
+		&--left {
+			border-left: 1px dotted transparent !important;
+		}
+		&--right {
+			border-right: 1px dotted transparent !important;
+		}
+	}
+
+}
+
+/// Border only for > 768px
+@media (min-width:$md){
+	.u-bdr-md{
+		 &{
+		   border: 1px solid  transparent !important;
+		}
+		 &-top{
+		    border-top: 1px solid transparent !important;
+		}
+		 &-bottom{
+		    border-bottom:1px solid transparent !important;
+		}
+		&-left{
+			border-left: 1px solid transparent !important;
+		}
+		&-right {
+			border-right: 1px solid transparent !important;
+		}
+	}
+}
+
+
+/// Border only for > 992px
+@media (min-width:$lg){
+	.u-bdr-lg{
+		 &{
+		    border: 1px solid  transparent !important;
+		}
+		 &-top{
+		    border-top: 1px solid transparent !important;
+		}
+		 &-bottom{
+		    border-bottom:1px solid transparent !important;
+		}
+		&-left{
+			border-left: 1px solid transparent !important;
+		}
+		&-right {
+			border-right: 1px solid transparent !important;
+		}
+	}
+}
+
+/// Border width 
+@for $i from 1 through 5 {
+	.u-bdr-#{$i}{
+		border-width: #{$i}px !important;
+	}
+}
+
+// Border color 
+
+

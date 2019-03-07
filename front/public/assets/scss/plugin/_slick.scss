@@ -1,0 +1,78 @@
+.slick-arrow {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	text-align: center;
+	background: #fff;
+	top: 50%;
+	position: absolute;
+	transform: translateY(-50%);
+	font-size: 24px;
+	padding: 5px;
+	cursor: pointer;
+	transition: .3s;
+	&:hover {
+		background: $color-primary;
+		color: #fff;
+	}
+}
+.slick-prev {
+	left: -70px;
+}
+.slick-next {
+	right: -70px;
+}
+
+.slick-dots {
+  padding: 0;
+  list-style: none;
+	> li {
+		display: inline-block;
+		margin-left: 4px;
+		margin-right: 4px;
+		> span {
+			width: 12px;
+			height: 12px;
+			border-radius: 20px;
+			background: rgba($color-primary, .50);
+			display: block;
+			border: none;
+			transition: .3s;
+			cursor: pointer;
+		}
+		&.slick-active {
+			> span {
+				width: 22px;
+				background: $color-primary;
+			}
+		}
+	}
+	
+	&.dots-white {
+		> li {
+			> span {
+				background: rgba(#fff, .70);
+			}
+			&.slick-active {
+			span {
+				background: #fff;
+			}
+		}
+		}
+	}
+	
+	
+	&.dots-green {
+		> li {
+			> span {
+				background: rgba(#2CD44A, .70);
+			}
+			&.slick-active {
+			span {
+				background: #2CD44A;
+			}
+		}
+		}
+	}
+	
+}

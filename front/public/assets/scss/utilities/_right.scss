@@ -1,0 +1,35 @@
+.u-right{
+	&-0 { right: 0 !important; }
+}
+
+@for $i from 5 through 50 {
+	@if($i%5 == 0){ 
+	 .u-right-#{$i}{
+	 	right: px-to-rem($i) !important;
+	 }
+	}
+}
+
+@for $i from 5 through 50 {
+	@if($i%5 == 0){ 
+	 .u-right-minus-#{$i}{
+	 	right: - px-to-rem($i) !important;
+	 }
+	}
+}
+
+.u-right-25p{
+	right: 25% !important;
+}
+
+.u-right-50p{
+	right: 50% !important;
+}
+
+.u-right-75p{
+	right: 75% !important;
+}
+
+.u-right-100p{
+	right: 100% !important;
+}

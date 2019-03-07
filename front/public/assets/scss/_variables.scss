@@ -1,0 +1,131 @@
+//// Table of content of theme variables
+// Override variable value by copy and paste it into "_customize.scss" and change the value
+
+// Standard Bootstrap brackpoint 
+// sm:576px, md:768px, lg:992px, xl:1200px
+
+// mobile 
+$sm:576px;
+// Tablet 
+$md:768px;
+//desktop  
+$lg:992px;
+//large desktop 
+$xl:1200px;
+
+$path:"assets/img/";
+
+
+//Colors
+
+$color-primary:#0081FF;
+$color-seondary:#8C47E2;
+$white:#fff;
+$black:#000;
+
+$theming:(
+  white:( color:#fff, inverse:#5a6671),
+  black:( color:#111, inverse:#fff ),
+  blue:( color:#0081FF, inverse:#fff ),
+  purple:( color:#8C47E2, inverse:#fff ),
+  purple-light:( color:#a282e3, inverse:#fff ),
+  yellow:( color:#FFAD00, inverse:#fff ),
+  green:( color:#2CD44A, inverse:#fff ),
+  red:( color:#F64D62,inverse:#fff ),
+  indigo:( color:#5D51F6, inverse:#fff ),
+  lime:( color:#c8d046, inverse:#fff )
+); 
+
+$gray:(
+  gray-1:#F3F6FB,
+  gray-2:#ECF5FE,
+  gray-3:#F0F3FA,
+);
+
+// Social color
+$socialColours:(
+    facebook: #3b5998,
+    twitter: #46acf9,
+    google: #dd4b39,
+    linkedin: #007bb6,
+    youtube: #bb0000,
+    instagram: #517fa4,
+    pinterest: #cb2027,
+    flickr: #ff0084,
+    tumblr: #32506d,
+    forusquare: #0072b1,
+    dribbble: #ea4c89,
+    vine: #00bf8f
+);
+
+@function get-social-media-colour($colour) {
+  @if map-has-key($socialColours, $colour) {
+    $colour: map-get($socialColours, $colour);
+  } @else {
+    @if type-of($colour) != colour {
+      @error "Invalid colour name: `#{$colour}`.";
+    }
+  }
+  @return $colour;
+}
+
+
+// Typography
+$base-font-size:1rem;
+$base-font-size-mobile:0.875rem;
+$base-line-height: 1.875em;
+$primary-font:'Open Sans', sans-serif;
+$secondary-font:'Dosis', sans-serif;
+$heading-fonts:'Dosis', sans-serif;
+$button-font:'Dosis', sans-serif;
+$link-color: $color-primary !default;
+$link-decoration: none !default;
+$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
+
+$h1-font-size:2.5rem;
+$h2-font-size:1.875rem;
+$h3-font-size:1.625rem;
+$h4-font-size:1.5rem;
+$h5-font-size:1.375rem;
+$h6-font-size:1.25rem;
+$heading-font-weight:600;
+$heading-line-height:1.37em;
+
+
+$base-font-color: #5a6671;
+$heading-color: #273f5b;
+$lead-text: 1.125rem;
+$lead-text-color:$base-font-color;
+$muted-text-color:rgba($base-font-color, .8);
+$strong-font-weight:600;
+$font-semi-bold:500;
+$font-noraml:400;
+$font-thin:300;
+$font-light:100;
+
+$border-color:#dfe6ec;
+$rounded:4px;
+
+// Forms input 
+$input-bg:$white;
+$input-border-color:$base-font-color;
+$input-border-radius:4px;
+$input-placeholder-color:#777;
+
+
+// blockquote
+$blockquote-bg:lighten(#999, 10%);
+$blockquote-font-size:$lead-text;
+$blockquote-font-color:$base-font-color;
+
+
+// Buttons
+$btn-font:$secondary-font !default;
+$btn-font-weight:600 !default;
+$btn-border-width:1px !default;
+$btn-border-color:none;
+$btn-border-radius:100em;
+$btn-padding:0.8125rem 2rem;
+$btn-disabled-opacity:.6;
+

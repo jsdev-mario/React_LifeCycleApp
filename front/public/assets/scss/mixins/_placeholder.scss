@@ -1,0 +1,7 @@
+// Placeholder text
+@mixin placeholder($color:$base-font-color, $font-size:$base-font-size, $opacity:1) {
+  &::-moz-placeholder           { color: $color; font-size:$font-size; opacity: $opacity; } 
+  &:-moz-placeholder            { color: $color; font-size:$font-size; opacity: $opacity; } 
+  &:-ms-input-placeholder       { color: $color; font-size:$font-size; opacity: $opacity; } 
+  &::-webkit-input-placeholder  { color: $color; font-size:$font-size; opacity: $opacity; } 
+}

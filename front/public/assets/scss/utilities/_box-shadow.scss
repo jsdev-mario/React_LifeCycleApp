@@ -1,0 +1,49 @@
+.box-shadow-v1{
+		@include box-shadow(0 5px 50px 0 rgba(#0051b2,.10));
+		&--onHover {
+		transition:.3s;
+			&:hover {
+				@include box-shadow(0 5px 50px 0 rgba(#0051b2,.10));
+			}
+	}
+}
+
+.box-shadow-v2{
+		@include box-shadow(0 0 50px 0 rgba(#1668b7,.15));
+		&--onHover {
+		transition:.3s;
+			&:hover {
+				@include box-shadow(0 0 50px 0 rgba(#1668b7,.15));
+			}
+	}
+}
+
+.box-shadow-v3{
+		@include box-shadow(0 5px 50px 0 rgba(#1668b7,.05));
+	&--onHover {
+	transition:.3s;
+		&:hover {
+			@include box-shadow(0 5px 50px 0 rgba(#1668b7,.05));
+		}
+	}
+}
+
+.box-shadow-v4{
+		@include box-shadow(0 5px 20px 0 rgba(#181a1a, .5));
+		&--onHover {
+	transition:.3s;
+			&:hover {
+			@include box-shadow(0 5px 20px 0 rgba(#181a1a, .5));
+			}
+	}
+}
+
+.box-shadow-primary {
+	@include box-shadow(0 5px 30px 0 rgba($color-primary, .3));
+		&--onHover {
+	transition:.3s;
+			&:hover {
+			@include box-shadow(0 5px 50px 0 rgba(#1668b7,.05));
+			}
+	}
+}

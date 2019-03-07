@@ -1,0 +1,13 @@
+// element width height 
+@mixin dimensions ($width, $height){
+  @if ($width and $height){
+    width:$width;
+    height:$height;
+  }
+  @else if($width){
+    width:$width;
+  }
+  @else if($height){
+    width:$height;
+  }
+}
